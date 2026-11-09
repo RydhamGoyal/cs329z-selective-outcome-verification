@@ -1,10 +1,8 @@
-# When Should an Agent Check Its Work?
+# CS329Z Final Project
 
-This CS329Z prototype studies selective outcome verification in stateful customer-service workflows. It runs the official [tau2-bench](https://github.com/sierra-research/tau2-bench) retail environment, user simulator, `LLMAgent`, and evaluator. A small controller intercepts completed tool calls, decides whether to read back state, and compares observed state with user-visible intent. The benchmark is pinned to commit `033bf082f48e4a3c6a1256208e93cf2ce9c3bb6f` (tau2 2.0.0). No upstream files are patched.
+I built an AI customer-service agent that handles retail tasks in [tau2-bench](https://github.com/sierra-research/tau2-bench). When the agent changes an order, my system can read the order back and check whether the change matches what the customer asked for. I compare several ways of deciding when to check, including checking every change and checking only changes that appear risky. The setup below pins tau2-bench to commit `033bf082f48e4a3c6a1256208e93cf2ce9c3bb6f`. I did not change its source code.
 
-**Status:** The repository includes 70 completed benchmark traces and a local viewer with five guided examples. At seed 42, risk-based checking used 14 held-out readbacks and scored 2/5. No checking used zero readbacks and scored 3/5. Across three held-out seeds, both policies scored 10/15. The current results do not establish a reliability gain.
-
-Project repository: [RydhamGoyal/cs329z-selective-outcome-verification](https://github.com/RydhamGoyal/cs329z-selective-outcome-verification).
+**What I have so far:** I ran 70 benchmark trials and built a viewer with five examples. In one held-out set, checking risky changes made 14 readbacks and completed 2 of 5 tasks. The agent with no checks made no readbacks and completed 3 of 5. Across three held-out seeds, both approaches completed 10 of 15 tasks. These results do not show a reliability gain yet.
 
 ## Explore the saved runs
 
