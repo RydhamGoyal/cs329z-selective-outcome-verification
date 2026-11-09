@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f6">
+  <title>Outcome — Agent trace replay</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell inspector-hidden" id="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Trace library">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div><strong>Outcome</strong><small>Trace evaluation workspace</small></div>
+      </div>
+      <div class="sidebar-scroll">
+        <details class="trace-folder" open>
+          <summary><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.5h6l2 2h9a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-17a1 1 0 0 1-1-1v-11a1 1 0 0 1 1-1Z"></path></svg><span>Saved traces</span><span class="folder-count" id="library-total"></span><span class="folder-chevron" aria-hidden="true">⌄</span></summary>
+          <div id="trace-list" class="trace-list library-list"></div>
+        </details>
+      </div>
+      <div class="sidebar-foot"><span class="offline-dot"></span> Saved runs · no model calls</div>
+    </aside>
+
+    <main class="workspace" id="workspace">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="icon-button mobile-menu" id="menu-button" type="button" aria-label="Open run library">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+          </button>
+          <span class="workspace-label">CS 329Z <span class="slash">/</span> τ²-bench retail</span>
+        </div>
+        <nav class="view-switch" aria-label="Main view">
+          <button type="button" id="home-tab" class="active">Home</button>
+          <button type="button" id="conversation-tab">Conversation</button>
+          <button type="button" id="results-tab">Results</button>
+        </nav>
+        <div class="topbar-actions">
+          <button class="icon-button inspector-toggle" id="inspector-button" type="button" aria-label="Toggle run details" title="Run details" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="16" rx="2"></rect><path d="M14 4v16"></path></svg>
+          </button>
+        </div>
+      </header>
+
+      <section class="home-view" id="home-view" aria-label="About this demo">
+        <div class="home-inner">
+          <div class="home-eyebrow">STANFORD CS 329Z · RESEARCH DEMO</div>
+          <h1>When should an agent check its work?</h1>
+          <p>AI agents can change customer orders and account details through tools. A tool may report success even when the saved record differs from what the customer asked for. If the agent continues, that mistake can affect later steps.</p>
+          <p>Checking every change takes extra time and tool calls. I am testing whether the agent can check the changes that matter most and still complete tasks reliably with fewer checks.</p>
+          <p>This midpoint demo presents five guided examples from the working system. Three come from benchmark tasks. Two deliberately introduce an address error to test whether checking finds it. Results summarizes the 70 natural benchmark runs. These early results do not yet establish a reliability gain.</p>
+          <div class="home-instruction"><strong>How to explore</strong><span>Choose a named example in Saved traces on the left. Its introduction explains why the run matters. Read or replay the conversation, then click a tool step to see what the agent did and what a check found.</span></div>
+          <button class="primary-button home-primary" id="home-browse-button" type="button">Browse saved traces <span aria-hidden="true">→</span></button>
+          <div class="home-footnote">Replay uses completed runs and makes no model calls. The address-error examples use deliberate fault injection and do not count toward official benchmark success rates.</div>
+        </div>
+      </section>
+
+      <section class="conversation-view" id="conversation-view" aria-label="Conversation replay" hidden>
+        <div class="run-header">
+          <div class="run-overline" id="run-overline">LOADING TRACE</div>
+          <div class="run-title-row"><h1 id="run-title">Preparing saved run</h1><span class="result-badge" id="run-result"></span></div>
+          <p id="run-description" class="run-description"></p>
+          <details class="story-box" id="story-box" open>
+            <summary>About this run</summary>
+            <div class="story-content">
+              <div class="story-line"><strong>Customer's goal</strong><p id="story-goal"></p></div>
+              <div class="story-line"><strong>What happened</strong><p id="story-happened"></p></div>
+              <div class="story-line"><strong>Why it matters</strong><p id="story-insight"></p></div>
+            </div>
+          </details>
+          <div class="run-facts" id="run-facts"></div>
+          <div class="fault-notice" id="fault-notice" hidden><strong>Controlled fault injection</strong><span>This trace tests detection and local repair. It does not measure natural agent error rates.</span></div>
+        </div>
+        <div class="chat-scroll" id="chat-scroll">
+          <div class="chat-stream" id="chat-stream" aria-live="polite"></div>
+          <div class="playback-cursor" id="playback-cursor" hidden><span class="pulse-dot"></span><span id="playback-activity">Playing saved simulation</span></div>
+        </div>
+        <div class="playback-bar">
+          <div class="playback-copy"><strong id="playback-title">Saved simulation</strong><span id="playback-detail">Full conversation shown</span></div>
+          <div class="playback-controls">
+            <button class="primary-button" id="play-button" type="button"><span id="play-icon">▶</span><span id="play-label">Replay simulation</span></button>
+            <button class="secondary-button" id="checkpoint-button" type="button">Next checkpoint</button>
+            <button class="secondary-button" id="show-all-button" type="button">Show full trace</button>
+            <label class="speed-control" for="speed-slider"><span>Replay speed</span><input id="speed-slider" type="range" min="1" max="4" step="0.25" value="1" aria-label="Replay speed"><output id="speed-value" for="speed-slider">1×</output></label>
+          </div>
+          <div class="progress-track" aria-hidden="true"><div id="progress-fill"></div></div>
+        </div>
+      </section>
+
+      <section class="results-view" id="results-view" aria-label="Experiment results" hidden>
+        <div class="results-inner">
+          <div class="results-eyebrow">OFFICIAL TAU²-BENCH EVALUATION</div>
+          <h1>What the runs show</h1>
+          <p class="results-lead">Selective verification reduced readback calls. The current natural runs do not show a reliability gain.</p>
+          <div class="results-cards" id="results-cards"></div>
+          <div class="panel comparison-panel"><div class="panel-head"><div><h2>Five policies, same five held-out tasks</h2><p>Official reward at seed 42. Readbacks count ordinary retail read-tool calls.</p></div></div><div id="policy-rows"></div></div>
+          <div class="results-bottom"><div class="panel" id="repeat-panel"></div><div class="panel"><h2>What the fault test means</h2><p>The controlled storage fault demonstrates that an independent readback can detect a wrong persisted address and prompt local repair. The benchmark evaluator replays tool arguments, so its reward does not score that injected storage fault.</p><p class="muted">Injected trials do not enter the official success rates above.</p></div></div>
+          <p class="results-footer">The acting model, user simulator, tools, and recovery rule remained fixed across policies. Paired seeds did not guarantee identical model trajectories.</p>
+        </div>
+      </section>
+    </main>
+
+    <aside class="inspector" id="inspector" aria-label="Tool and verification details">
+      <div class="inspector-head"><div><span class="inspector-eyebrow">INSPECTOR</span><h2 id="inspector-title">Run details</h2></div><button class="icon-button inspector-close" id="inspector-close" type="button" aria-label="Close details">×</button></div>
+      <div class="inspector-scroll" id="inspector-content"></div>
+    </aside>
+  </div>
+  <div class="mobile-scrim" id="mobile-scrim" hidden></div>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

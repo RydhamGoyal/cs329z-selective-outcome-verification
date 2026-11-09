@@ -1,0 +1,21 @@
+{
+  "suite": "heldout_repeats",
+  "model": "openrouter/openai/gpt-4.1-mini",
+  "seeds": [
+    43,
+    44
+  ],
+  "tasks": [
+    "17",
+    "42",
+    "71",
+    "97",
+    "102"
+  ],
+  "policies": [
+    "risk",
+    "none"
+  ],
+  "threshold": 0.55,
+  "benchmark_commit": "033bf082f48e4a3c6a1256208e93cf2ce9c3bb6f"
+}

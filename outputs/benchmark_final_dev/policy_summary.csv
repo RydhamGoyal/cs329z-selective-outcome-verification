@@ -1,0 +1,6 @@
+policy,tasks,official_successes,success_rate,writes,checkpoints,readback_calls,inconclusive,actionable_verdicts,fail_verdicts,correction_opportunities,total_model_tokens,estimated_model_cost_usd,mean_elapsed_seconds
+exhaustive,5,1,0.2,11,11,22,9,2,0,0,316335,0.133439,21.079
+final-only,5,1,0.2,12,12,12,10,2,0,0,354376,0.148937,21.792
+none,5,4,0.8,14,0,0,0,0,0,0,339432,0.142206,20.769
+random,5,1,0.2,13,10,20,7,3,0,0,413160,0.17282,25.475
+risk,5,4,0.8,14,10,20,7,3,0,0,401491,0.167818,24.669

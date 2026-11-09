@@ -1,0 +1,23 @@
+{
+  "risk": {
+    "trials": 15,
+    "successes": 10,
+    "readback_calls": 60,
+    "fail_verdicts": 0,
+    "inconclusive_verdicts": 22,
+    "estimated_model_cost_usd": 0.464027
+  },
+  "none": {
+    "trials": 15,
+    "successes": 10,
+    "readback_calls": 0,
+    "fail_verdicts": 0,
+    "inconclusive_verdicts": 0,
+    "estimated_model_cost_usd": 0.471445
+  },
+  "paired": {
+    "risk_wins": 2,
+    "none_wins": 2,
+    "ties": 11
+  }
+}

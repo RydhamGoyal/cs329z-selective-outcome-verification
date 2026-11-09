@@ -1,0 +1,62 @@
+{
+  "heldout_seed42": [
+    {
+      "policy": "none",
+      "trials": 5,
+      "successes": 3,
+      "readbacks": 0,
+      "checks": 0,
+      "inconclusive": 0
+    },
+    {
+      "policy": "final-only",
+      "trials": 5,
+      "successes": 3,
+      "readbacks": 9,
+      "checks": 9,
+      "inconclusive": 6
+    },
+    {
+      "policy": "exhaustive",
+      "trials": 5,
+      "successes": 3,
+      "readbacks": 22,
+      "checks": 11,
+      "inconclusive": 9
+    },
+    {
+      "policy": "random",
+      "trials": 5,
+      "successes": 3,
+      "readbacks": 14,
+      "checks": 7,
+      "inconclusive": 4
+    },
+    {
+      "policy": "risk",
+      "trials": 5,
+      "successes": 2,
+      "readbacks": 14,
+      "checks": 7,
+      "inconclusive": 5
+    }
+  ],
+  "repeated_heldout": {
+    "risk": {
+      "trials": 15,
+      "successes": 10,
+      "readbacks": 60
+    },
+    "none": {
+      "trials": 15,
+      "successes": 10,
+      "readbacks": 0
+    }
+  },
+  "paired_outcomes": {
+    "risk": 2,
+    "none": 2,
+    "ties": 11
+  },
+  "natural_runs": 70
+}

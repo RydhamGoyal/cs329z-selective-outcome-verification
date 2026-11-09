@@ -1,0 +1,1443 @@
+{
+  "benchmark_commit": "033bf082f48e4a3c6a1256208e93cf2ce9c3bb6f",
+  "random_seed_scheme": "task-specific-v1",
+  "prompt_tokens": 36974,
+  "completion_tokens": 432,
+  "total_model_tokens": 37406,
+  "reported_model_cost_usd": null,
+  "estimated_model_cost_usd": 0.015480800000000001,
+  "benchmark": "tau2 retail",
+  "task_id": "17",
+  "seed": 42,
+  "policy": "random",
+  "model": "openrouter/openai/gpt-4.1-mini",
+  "threshold": 0.55,
+  "random_rate": 0.7142857142857143,
+  "elapsed_seconds": 12.959139291662723,
+  "reward": 1.0,
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "Hi! How can I help you today?",
+      "tool_calls": null,
+      "is_audio": false,
+      "turn_idx": 0,
+      "timestamp": "2026-11-08T19:02:25.753586",
+      "cost": 0.0,
+      "usage": null,
+      "raw_data": null,
+      "generation_time_seconds": null,
+      "audio_format": null,
+      "audio_path": null,
+      "audio_script_gold": null,
+      "speech_effects": null,
+      "source_effects": null,
+      "channel_effects": null,
+      "turn_taking_action": null,
+      "utterance_ids": null,
+      "chunk_id": null,
+      "is_final_chunk": true,
+      "source": null,
+      "contains_speech": true
+    },
+    {
+      "role": "user",
+      "content": "Hi, I need to change the delivery address for my order #W8665881. Can you help me with that?",
+      "tool_calls": null,
+      "is_audio": false,
+      "turn_idx": 1,
+      "timestamp": "2026-11-08T19:02:26.444633",
+      "cost": 0.0,
+      "usage": {
+        "completion_tokens": 26,
+        "prompt_tokens": 416
+      },
+      "raw_data": {
+        "id": "gen-1794193345-6vKChcTgIlcVJgIp8pH4",
+        "created": 1794193345,
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "system_fingerprint": null,
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "Hi, I need to change the delivery address for my order #W8665881. Can you help me with that?",
+              "role": "assistant",
+              "tool_calls": null,
+              "function_call": null,
+              "provider_specific_fields": {
+                "refusal": null,
+                "reasoning": null
+              }
+            },
+            "provider_specific_fields": {
+              "native_finish_reason": "completed"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 26,
+          "prompt_tokens": 416,
+          "total_tokens": 442,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost": 0.000208,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.000208,
+            "upstream_inference_prompt_cost": 0.0001664,
+            "upstream_inference_completions_cost": 4.16e-05
+          }
+        },
+        "provider": "OpenAI",
+        "service_tier": "default"
+      },
+      "generation_time_seconds": null,
+      "audio_format": null,
+      "audio_path": null,
+      "audio_script_gold": null,
+      "speech_effects": null,
+      "source_effects": null,
+      "channel_effects": null,
+      "turn_taking_action": null,
+      "utterance_ids": null,
+      "chunk_id": null,
+      "is_final_chunk": true,
+      "source": null,
+      "contains_speech": true
+    },
+    {
+      "role": "assistant",
+      "content": "To assist you with changing the delivery address for your order #W8665881, I need to verify your identity first. Could you please provide your email address or your full name along with your zip code?",
+      "tool_calls": null,
+      "is_audio": false,
+      "turn_idx": 2,
+      "timestamp": "2026-11-08T19:02:27.397505",
+      "cost": 0.0,
+      "usage": {
+        "completion_tokens": 44,
+        "prompt_tokens": 3575
+      },
+      "raw_data": {
+        "id": "gen-1794193346-1uDTxvdtIzQYAajEcJce",
+        "created": 1794193346,
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "system_fingerprint": null,
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "To assist you with changing the delivery address for your order #W8665881, I need to verify your identity first. Could you please provide your email address or your full name along with your zip code?",
+              "role": "assistant",
+              "tool_calls": null,
+              "function_call": null,
+              "provider_specific_fields": {
+                "refusal": null,
+                "reasoning": null
+              }
+            },
+            "provider_specific_fields": {
+              "native_finish_reason": "completed"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 44,
+          "prompt_tokens": 3575,
+          "total_tokens": 3619,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 2816,
+            "cache_write_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost": 0.0006556,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.0006556,
+            "upstream_inference_prompt_cost": 0.0005852,
+            "upstream_inference_completions_cost": 7.04e-05
+          }
+        },
+        "provider": "OpenAI",
+        "service_tier": "default"
+      },
+      "generation_time_seconds": 0.9493425004184246,
+      "audio_format": null,
+      "audio_path": null,
+      "audio_script_gold": null,
+      "speech_effects": null,
+      "source_effects": null,
+      "channel_effects": null,
+      "turn_taking_action": null,
+      "utterance_ids": null,
+      "chunk_id": null,
+      "is_final_chunk": true,
+      "source": null,
+      "contains_speech": true
+    },
+    {
+      "role": "user",
+      "content": "Sure, my name is Fatima Johnson, and my zip code is 78712.",
+      "tool_calls": null,
+      "is_audio": false,
+      "turn_idx": 3,
+      "timestamp": "2026-11-08T19:02:28.193341",
+      "cost": 0.0,
+      "usage": {
+        "completion_tokens": 19,
+        "prompt_tokens": 491
+      },
+      "raw_data": {
+        "id": "gen-1794193347-AVzBiJc9LJNrgRLrCyQh",
+        "created": 1794193347,
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "system_fingerprint": null,
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "Sure, my name is Fatima Johnson, and my zip code is 78712.",
+              "role": "assistant",
+              "tool_calls": null,
+              "function_call": null,
+              "provider_specific_fields": {
+                "refusal": null,
+                "reasoning": null
+              }
+            },
+            "provider_specific_fields": {
+              "native_finish_reason": "completed"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 19,
+          "prompt_tokens": 491,
+          "total_tokens": 510,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost": 0.0002268,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.0002268,
+            "upstream_inference_prompt_cost": 0.0001964,
+            "upstream_inference_completions_cost": 3.04e-05
+          }
+        },
+        "provider": "OpenAI",
+        "service_tier": "default"
+      },
+      "generation_time_seconds": null,
+      "audio_format": null,
+      "audio_path": null,
+      "audio_script_gold": null,
+      "speech_effects": null,
+      "source_effects": null,
+      "channel_effects": null,
+      "turn_taking_action": null,
+      "utterance_ids": null,
+      "chunk_id": null,
+      "is_final_chunk": true,
+      "source": null,
+      "contains_speech": true
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_1sWzzVlltRCIxRK2nLsM9crF",
+          "name": "find_user_id_by_name_zip",
+          "arguments": {
+            "first_name": "Fatima",
+            "last_name": "Johnson",
+            "zip": "78712"
+          },
+          "requestor": "assistant"
+        }
+      ],
+      "is_audio": false,
+      "turn_idx": 4,
+      "timestamp": "2026-11-08T19:02:28.955510",
+      "cost": 0.0,
+      "usage": {
+        "completion_tokens": 31,
+        "prompt_tokens": 3643
+      },
+      "raw_data": {
+        "id": "gen-1794193348-V0PK4egr23KtxCp5Tdxq",
+        "created": 1794193348,
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "system_fingerprint": null,
+        "choices": [
+          {
+            "finish_reason": "tool_calls",
+            "index": 0,
+            "message": {
+              "content": null,
+              "role": "assistant",
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "{\"first_name\":\"Fatima\",\"last_name\":\"Johnson\",\"zip\":\"78712\"}",
+                    "name": "find_user_id_by_name_zip"
+                  },
+                  "id": "call_1sWzzVlltRCIxRK2nLsM9crF",
+                  "type": "function"
+                }
+              ],
+              "function_call": null,
+              "provider_specific_fields": {
+                "refusal": null,
+                "reasoning": null
+              }
+            },
+            "provider_specific_fields": {
+              "native_finish_reason": "completed"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 31,
+          "prompt_tokens": 3643,
+          "total_tokens": 3674,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 2816,
+            "cache_write_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost": 0.000662,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.000662,
+            "upstream_inference_prompt_cost": 0.0006124,
+            "upstream_inference_completions_cost": 4.96e-05
+          }
+        },
+        "provider": "OpenAI",
+        "service_tier": "default"
+      },
+      "generation_time_seconds": 0.7510250420309603,
+      "audio_format": null,
+      "audio_path": null,
+      "audio_script_gold": null,
+      "speech_effects": null,
+      "source_effects": null,
+      "channel_effects": null,
+      "turn_taking_action": null,
+      "utterance_ids": null,
+      "chunk_id": null,
+      "is_final_chunk": true,
+      "source": null,
+      "contains_speech": true
+    },
+    {
+      "id": "call_1sWzzVlltRCIxRK2nLsM9crF",
+      "role": "tool",
+      "content": "fatima_johnson_7581",
+      "requestor": "assistant",
+      "error": false,
+      "execution_status": "executed",
+      "turn_idx": 5,
+      "timestamp": "2026-11-08T19:02:28.957368"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you, Fatima Johnson. I have verified your identity. Now, please provide me with the new delivery address details including address line 1, address line 2 (if any), city, state, and country for order #W8665881.",
+      "tool_calls": null,
+      "is_audio": false,
+      "turn_idx": 6,
+      "timestamp": "2026-11-08T19:02:30.702262",
+      "cost": 0.0,
+      "usage": {
+        "completion_tokens": 39,
+        "prompt_tokens": 3752
+      },
+      "raw_data": {
+        "id": "gen-1794193349-bJemPvHtFabLI3Sq4yXG",
+        "created": 1794193349,
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "system_fingerprint": null,
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "Thank you, Fatima Johnson. I have verified your identity. Now, please provide me with the new delivery address details including address line 1, address line 2 (if any), city, state, and country for order #W8665881.",
+              "role": "assistant",
+              "tool_calls": null,
+              "function_call": null,
+              "provider_specific_fields": {
+                "refusal": null,
+                "reasoning": null
+              }
+            },
+            "provider_specific_fields": {
+              "native_finish_reason": "completed"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 39,
+          "prompt_tokens": 3752,
+          "total_tokens": 3791,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 3456,
+            "cache_write_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost": 0.0005264,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.0005264,
+            "upstream_inference_prompt_cost": 0.000464,
+            "upstream_inference_completions_cost": 6.24e-05
+          }
+        },
+        "provider": "OpenAI",
+        "service_tier": "default"
+      },
+      "generation_time_seconds": 1.670158667024225,
+      "audio_format": null,
+      "audio_path": null,
+      "audio_script_gold": null,
+      "speech_effects": null,
+      "source_effects": null,
+      "channel_effects": null,
+      "turn_taking_action": null,
+      "utterance_ids": null,
+      "chunk_id": null,
+      "is_final_chunk": true,
+      "source": null,
+      "contains_speech": true
+    },
+    {
+      "role": "user",
+      "content": "I just want to update the delivery to Suite 641 instead. The rest of the address can stay the same.",
+      "tool_calls": null,
+      "is_audio": false,
+      "turn_idx": 7,
+      "timestamp": "2026-11-08T19:02:31.344165",
+      "cost": 0.0,
+      "usage": {
+        "completion_tokens": 24,
+        "prompt_tokens": 569
+      },
+      "raw_data": {
+        "id": "gen-1794193350-QDMWYDlBWNHCNjm1R3v2",
+        "created": 1794193350,
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "system_fingerprint": null,
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "I just want to update the delivery to Suite 641 instead. The rest of the address can stay the same.",
+              "role": "assistant",
+              "tool_calls": null,
+              "function_call": null,
+              "provider_specific_fields": {
+                "refusal": null,
+                "reasoning": null
+              }
+            },
+            "provider_specific_fields": {
+              "native_finish_reason": "completed"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 24,
+          "prompt_tokens": 569,
+          "total_tokens": 593,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost": 0.000266,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.000266,
+            "upstream_inference_prompt_cost": 0.0002276,
+            "upstream_inference_completions_cost": 3.84e-05
+          }
+        },
+        "provider": "OpenAI",
+        "service_tier": "default"
+      },
+      "generation_time_seconds": null,
+      "audio_format": null,
+      "audio_path": null,
+      "audio_script_gold": null,
+      "speech_effects": null,
+      "source_effects": null,
+      "channel_effects": null,
+      "turn_taking_action": null,
+      "utterance_ids": null,
+      "chunk_id": null,
+      "is_final_chunk": true,
+      "source": null,
+      "contains_speech": true
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_WyXmVqgaodbSP2Vrf4Bjlu1q",
+          "name": "get_order_details",
+          "arguments": {
+            "order_id": "#W8665881"
+          },
+          "requestor": "assistant"
+        }
+      ],
+      "is_audio": false,
+      "turn_idx": 8,
+      "timestamp": "2026-11-08T19:02:32.092821",
+      "cost": 0.0,
+      "usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 3779
+      },
+      "raw_data": {
+        "id": "gen-1794193351-bU2ydQtaCxobK1zW1NEW",
+        "created": 1794193351,
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "system_fingerprint": null,
+        "choices": [
+          {
+            "finish_reason": "tool_calls",
+            "index": 0,
+            "message": {
+              "content": null,
+              "role": "assistant",
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "{\"order_id\":\"#W8665881\"}",
+                    "name": "get_order_details"
+                  },
+                  "id": "call_WyXmVqgaodbSP2Vrf4Bjlu1q",
+                  "type": "function"
+                }
+              ],
+              "function_call": null,
+              "provider_specific_fields": {
+                "refusal": null,
+                "reasoning": null
+              }
+            },
+            "provider_specific_fields": {
+              "native_finish_reason": "completed"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 21,
+          "prompt_tokens": 3779,
+          "total_tokens": 3800,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 3584,
+            "cache_write_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost": 0.00047,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.00047,
+            "upstream_inference_prompt_cost": 0.0004364,
+            "upstream_inference_completions_cost": 3.36e-05
+          }
+        },
+        "provider": "OpenAI",
+        "service_tier": "default"
+      },
+      "generation_time_seconds": 0.7425915002822876,
+      "audio_format": null,
+      "audio_path": null,
+      "audio_script_gold": null,
+      "speech_effects": null,
+      "source_effects": null,
+      "channel_effects": null,
+      "turn_taking_action": null,
+      "utterance_ids": null,
+      "chunk_id": null,
+      "is_final_chunk": true,
+      "source": null,
+      "contains_speech": true
+    },
+    {
+      "id": "call_WyXmVqgaodbSP2Vrf4Bjlu1q",
+      "role": "tool",
+      "content": "{\"order_id\": \"#W8665881\", \"user_id\": \"fatima_johnson_7581\", \"address\": {\"address1\": \"123 Elm Street\", \"address2\": \"Suite 640\", \"city\": \"Austin\", \"country\": \"USA\", \"state\": \"TX\", \"zip\": \"78712\"}, \"items\": [{\"name\": \"Bluetooth Speaker\", \"product_id\": \"4768869376\", \"item_id\": \"5855700373\", \"price\": 293.46, \"options\": {\"color\": \"black\", \"battery life\": \"10 hours\", \"water resistance\": \"yes\"}}, {\"name\": \"Smart Watch\", \"product_id\": \"6945232052\", \"item_id\": \"9408160950\", \"price\": 381.26, \"options\": {\"color\": \"gold\", \"band material\": \"leather\", \"display\": \"LCD\"}}, {\"name\": \"Dumbbell Set\", \"product_id\": \"7233192239\", \"item_id\": \"4422467033\", \"price\": 483.47, \"options\": {\"weight range\": \"30-50 lbs\", \"material\": \"urethane\", \"set type\": \"adjustable\"}}, {\"name\": \"Espresso Machine\", \"product_id\": \"4354588079\", \"item_id\": \"1157853815\", \"price\": 3096.7, \"options\": {\"pressure\": \"19 bar\", \"capacity\": \"2L\", \"type\": \"capsule\"}}, {\"name\": \"Action Camera\", \"product_id\": \"3377618313\", \"item_id\": \"8725040869\", \"price\": 522.86, \"options\": {\"resolution\": \"4K\", \"waterproof\": \"no\", \"color\": \"black\"}}], \"status\": \"pending\", \"fulfillments\": [], \"payment_history\": [{\"transaction_type\": \"payment\", \"amount\": 4777.75, \"payment_method_id\": \"paypal_5364164\"}], \"cancel_reason\": null, \"exchange_items\": null, \"exchange_new_items\": null, \"exchange_payment_method_id\": null, \"exchange_price_difference\": null, \"return_items\": null, \"return_payment_method_id\": null}",
+      "requestor": "assistant",
+      "error": false,
+      "execution_status": "executed",
+      "turn_idx": 9,
+      "timestamp": "2026-11-08T19:02:32.093780"
+    },
+    {
+      "role": "assistant",
+      "content": "Your current delivery address for order #W8665881 is:\n123 Elm Street, Suite 640, Austin, TX, 78712, USA.\n\nYou want to update the address to:\n123 Elm Street, Suite 641, Austin, TX, 78712, USA.\n\nPlease confirm if this is correct and if you want me to proceed with the address update. (yes/no)",
+      "tool_calls": null,
+      "is_audio": false,
+      "turn_idx": 10,
+      "timestamp": "2026-11-08T19:02:33.140580",
+      "cost": 0.0,
+      "usage": {
+        "completion_tokens": 81,
+        "prompt_tokens": 4277
+      },
+      "raw_data": {
+        "id": "gen-1794193352-eUge9T4TDImrxIYMnmij",
+        "created": 1794193352,
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "system_fingerprint": null,
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "Your current delivery address for order #W8665881 is:\n123 Elm Street, Suite 640, Austin, TX, 78712, USA.\n\nYou want to update the address to:\n123 Elm Street, Suite 641, Austin, TX, 78712, USA.\n\nPlease confirm if this is correct and if you want me to proceed with the address update. (yes/no)",
+              "role": "assistant",
+              "tool_calls": null,
+              "function_call": null,
+              "provider_specific_fields": {
+                "refusal": null,
+                "reasoning": null
+              }
+            },
+            "provider_specific_fields": {
+              "native_finish_reason": "completed"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 81,
+          "prompt_tokens": 4277,
+          "total_tokens": 4358,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 3712,
+            "cache_write_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost": 0.0007268,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.0007268,
+            "upstream_inference_prompt_cost": 0.0005972,
+            "upstream_inference_completions_cost": 0.0001296
+          }
+        },
+        "provider": "OpenAI",
+        "service_tier": "default"
+      },
+      "generation_time_seconds": 1.0427066250704229,
+      "audio_format": null,
+      "audio_path": null,
+      "audio_script_gold": null,
+      "speech_effects": null,
+      "source_effects": null,
+      "channel_effects": null,
+      "turn_taking_action": null,
+      "utterance_ids": null,
+      "chunk_id": null,
+      "is_final_chunk": true,
+      "source": null,
+      "contains_speech": true
+    },
+    {
+      "role": "user",
+      "content": "Yes, that's correct. Please go ahead and update the address to Suite 641.",
+      "tool_calls": null,
+      "is_audio": false,
+      "turn_idx": 11,
+      "timestamp": "2026-11-08T19:02:33.930083",
+      "cost": 0.0,
+      "usage": {
+        "completion_tokens": 18,
+        "prompt_tokens": 679
+      },
+      "raw_data": {
+        "id": "gen-1794193353-nGfuT5IuEJLH6unJFoej",
+        "created": 1794193353,
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "system_fingerprint": null,
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "Yes, that's correct. Please go ahead and update the address to Suite 641.",
+              "role": "assistant",
+              "tool_calls": null,
+              "function_call": null,
+              "provider_specific_fields": {
+                "refusal": null,
+                "reasoning": null
+              }
+            },
+            "provider_specific_fields": {
+              "native_finish_reason": "completed"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 18,
+          "prompt_tokens": 679,
+          "total_tokens": 697,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost": 0.0003004,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.0003004,
+            "upstream_inference_prompt_cost": 0.0002716,
+            "upstream_inference_completions_cost": 2.88e-05
+          }
+        },
+        "provider": "OpenAI",
+        "service_tier": "default"
+      },
+      "generation_time_seconds": null,
+      "audio_format": null,
+      "audio_path": null,
+      "audio_script_gold": null,
+      "speech_effects": null,
+      "source_effects": null,
+      "channel_effects": null,
+      "turn_taking_action": null,
+      "utterance_ids": null,
+      "chunk_id": null,
+      "is_final_chunk": true,
+      "source": null,
+      "contains_speech": true
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_jHqYcPZ2EonUivCN0ktdkc9D",
+          "name": "modify_pending_order_address",
+          "arguments": {
+            "order_id": "#W8665881",
+            "address1": "123 Elm Street",
+            "address2": "Suite 641",
+            "city": "Austin",
+            "state": "TX",
+            "country": "USA",
+            "zip": "78712"
+          },
+          "requestor": "assistant"
+        }
+      ],
+      "is_audio": false,
+      "turn_idx": 12,
+      "timestamp": "2026-11-08T19:02:34.981614",
+      "cost": 0.0,
+      "usage": {
+        "completion_tokens": 53,
+        "prompt_tokens": 4381
+      },
+      "raw_data": {
+        "id": "gen-1794193353-NwOdGP0ikxGSVRxY5tlc",
+        "created": 1794193353,
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "system_fingerprint": null,
+        "choices": [
+          {
+            "finish_reason": "tool_calls",
+            "index": 0,
+            "message": {
+              "content": null,
+              "role": "assistant",
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "{\"order_id\":\"#W8665881\",\"address1\":\"123 Elm Street\",\"address2\":\"Suite 641\",\"city\":\"Austin\",\"state\":\"TX\",\"country\":\"USA\",\"zip\":\"78712\"}",
+                    "name": "modify_pending_order_address"
+                  },
+                  "id": "call_jHqYcPZ2EonUivCN0ktdkc9D",
+                  "type": "function"
+                }
+              ],
+              "function_call": null,
+              "provider_specific_fields": {
+                "refusal": null,
+                "reasoning": null
+              }
+            },
+            "provider_specific_fields": {
+              "native_finish_reason": "completed"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 53,
+          "prompt_tokens": 4381,
+          "total_tokens": 4434,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 4224,
+            "cache_write_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost": 0.00057,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.00057,
+            "upstream_inference_prompt_cost": 0.0004852,
+            "upstream_inference_completions_cost": 8.48e-05
+          }
+        },
+        "provider": "OpenAI",
+        "service_tier": "default"
+      },
+      "generation_time_seconds": 1.0456587499938905,
+      "audio_format": null,
+      "audio_path": null,
+      "audio_script_gold": null,
+      "speech_effects": null,
+      "source_effects": null,
+      "channel_effects": null,
+      "turn_taking_action": null,
+      "utterance_ids": null,
+      "chunk_id": null,
+      "is_final_chunk": true,
+      "source": null,
+      "contains_speech": true
+    },
+    {
+      "id": "call_jHqYcPZ2EonUivCN0ktdkc9D",
+      "role": "tool",
+      "content": "{\"order_id\": \"#W8665881\", \"user_id\": \"fatima_johnson_7581\", \"address\": {\"address1\": \"123 Elm Street\", \"address2\": \"Suite 641\", \"city\": \"Austin\", \"country\": \"USA\", \"state\": \"TX\", \"zip\": \"78712\"}, \"items\": [{\"name\": \"Bluetooth Speaker\", \"product_id\": \"4768869376\", \"item_id\": \"5855700373\", \"price\": 293.46, \"options\": {\"color\": \"black\", \"battery life\": \"10 hours\", \"water resistance\": \"yes\"}}, {\"name\": \"Smart Watch\", \"product_id\": \"6945232052\", \"item_id\": \"9408160950\", \"price\": 381.26, \"options\": {\"color\": \"gold\", \"band material\": \"leather\", \"display\": \"LCD\"}}, {\"name\": \"Dumbbell Set\", \"product_id\": \"7233192239\", \"item_id\": \"4422467033\", \"price\": 483.47, \"options\": {\"weight range\": \"30-50 lbs\", \"material\": \"urethane\", \"set type\": \"adjustable\"}}, {\"name\": \"Espresso Machine\", \"product_id\": \"4354588079\", \"item_id\": \"1157853815\", \"price\": 3096.7, \"options\": {\"pressure\": \"19 bar\", \"capacity\": \"2L\", \"type\": \"capsule\"}}, {\"name\": \"Action Camera\", \"product_id\": \"3377618313\", \"item_id\": \"8725040869\", \"price\": 522.86, \"options\": {\"resolution\": \"4K\", \"waterproof\": \"no\", \"color\": \"black\"}}], \"status\": \"pending\", \"fulfillments\": [], \"payment_history\": [{\"transaction_type\": \"payment\", \"amount\": 4777.75, \"payment_method_id\": \"paypal_5364164\"}], \"cancel_reason\": null, \"exchange_items\": null, \"exchange_new_items\": null, \"exchange_payment_method_id\": null, \"exchange_price_difference\": null, \"return_items\": null, \"return_payment_method_id\": null}",
+      "requestor": "assistant",
+      "error": false,
+      "execution_status": "executed",
+      "turn_idx": 13,
+      "timestamp": "2026-11-08T19:02:34.982228"
+    },
+    {
+      "role": "assistant",
+      "content": "The delivery address for your order #W8665881 has been successfully updated to Suite 641. Is there anything else I can assist you with?",
+      "tool_calls": null,
+      "is_audio": false,
+      "turn_idx": 14,
+      "timestamp": "2026-11-08T19:02:36.168260",
+      "cost": 0.0,
+      "usage": {
+        "completion_tokens": 32,
+        "prompt_tokens": 4924
+      },
+      "raw_data": {
+        "id": "gen-1794193354-toRQfkmi4oUeV13jgZh9",
+        "created": 1794193355,
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "system_fingerprint": null,
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "The delivery address for your order #W8665881 has been successfully updated to Suite 641. Is there anything else I can assist you with?",
+              "role": "assistant",
+              "tool_calls": null,
+              "function_call": null,
+              "provider_specific_fields": {
+                "refusal": null,
+                "reasoning": null
+              }
+            },
+            "provider_specific_fields": {
+              "native_finish_reason": "completed"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 32,
+          "prompt_tokens": 4924,
+          "total_tokens": 4956,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 3584,
+            "cache_write_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost": 0.0009456,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.0009456,
+            "upstream_inference_prompt_cost": 0.0008944,
+            "upstream_inference_completions_cost": 5.12e-05
+          }
+        },
+        "provider": "OpenAI",
+        "service_tier": "default"
+      },
+      "generation_time_seconds": 1.1809260840527713,
+      "audio_format": null,
+      "audio_path": null,
+      "audio_script_gold": null,
+      "speech_effects": null,
+      "source_effects": null,
+      "channel_effects": null,
+      "turn_taking_action": null,
+      "utterance_ids": null,
+      "chunk_id": null,
+      "is_final_chunk": true,
+      "source": null,
+      "contains_speech": true
+    },
+    {
+      "role": "user",
+      "content": "No, that's all for now. Thank you for your help!",
+      "tool_calls": null,
+      "is_audio": false,
+      "turn_idx": 15,
+      "timestamp": "2026-11-08T19:02:36.810417",
+      "cost": 0.0,
+      "usage": {
+        "completion_tokens": 14,
+        "prompt_tokens": 734
+      },
+      "raw_data": {
+        "id": "gen-1794193356-gpXJRdJZAtxyv0Bwgfwa",
+        "created": 1794193356,
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "system_fingerprint": null,
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "No, that's all for now. Thank you for your help!",
+              "role": "assistant",
+              "tool_calls": null,
+              "function_call": null,
+              "provider_specific_fields": {
+                "refusal": null,
+                "reasoning": null
+              }
+            },
+            "provider_specific_fields": {
+              "native_finish_reason": "completed"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 14,
+          "prompt_tokens": 734,
+          "total_tokens": 748,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost": 0.000316,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.000316,
+            "upstream_inference_prompt_cost": 0.0002936,
+            "upstream_inference_completions_cost": 2.24e-05
+          }
+        },
+        "provider": "OpenAI",
+        "service_tier": "default"
+      },
+      "generation_time_seconds": null,
+      "audio_format": null,
+      "audio_path": null,
+      "audio_script_gold": null,
+      "speech_effects": null,
+      "source_effects": null,
+      "channel_effects": null,
+      "turn_taking_action": null,
+      "utterance_ids": null,
+      "chunk_id": null,
+      "is_final_chunk": true,
+      "source": null,
+      "contains_speech": true
+    },
+    {
+      "role": "assistant",
+      "content": "You're welcome! If you need any further assistance in the future, feel free to reach out. Have a great day!",
+      "tool_calls": null,
+      "is_audio": false,
+      "turn_idx": 16,
+      "timestamp": "2026-11-08T19:02:38.041909",
+      "cost": 0.0,
+      "usage": {
+        "completion_tokens": 26,
+        "prompt_tokens": 4975
+      },
+      "raw_data": {
+        "id": "gen-1794193356-ztgmvygr7p3K4kEOPVmp",
+        "created": 1794193356,
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "system_fingerprint": null,
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "You're welcome! If you need any further assistance in the future, feel free to reach out. Have a great day!",
+              "role": "assistant",
+              "tool_calls": null,
+              "function_call": null,
+              "provider_specific_fields": {
+                "refusal": null,
+                "reasoning": null
+              }
+            },
+            "provider_specific_fields": {
+              "native_finish_reason": "completed"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 26,
+          "prompt_tokens": 4975,
+          "total_tokens": 5001,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 4224,
+            "cache_write_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost": 0.0007644,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.0007644,
+            "upstream_inference_prompt_cost": 0.0007228,
+            "upstream_inference_completions_cost": 4.16e-05
+          }
+        },
+        "provider": "OpenAI",
+        "service_tier": "default"
+      },
+      "generation_time_seconds": 1.2277925834059715,
+      "audio_format": null,
+      "audio_path": null,
+      "audio_script_gold": null,
+      "speech_effects": null,
+      "source_effects": null,
+      "channel_effects": null,
+      "turn_taking_action": null,
+      "utterance_ids": null,
+      "chunk_id": null,
+      "is_final_chunk": true,
+      "source": null,
+      "contains_speech": true
+    },
+    {
+      "role": "user",
+      "content": "###STOP###",
+      "tool_calls": null,
+      "is_audio": false,
+      "turn_idx": 17,
+      "timestamp": "2026-11-08T19:02:38.559144",
+      "cost": 0.0,
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 779
+      },
+      "raw_data": {
+        "id": "gen-1794193358-yzcdtHK9MEzOG9gPWFkY",
+        "created": 1794193358,
+        "model": "openai/gpt-4.1-mini",
+        "object": "chat.completion",
+        "system_fingerprint": null,
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "###STOP###",
+              "role": "assistant",
+              "tool_calls": null,
+              "function_call": null,
+              "provider_specific_fields": {
+                "refusal": null,
+                "reasoning": null
+              }
+            },
+            "provider_specific_fields": {
+              "native_finish_reason": "completed"
+            }
+          }
+        ],
+        "usage": {
+          "completion_tokens": 4,
+          "prompt_tokens": 779,
+          "total_tokens": 783,
+          "completion_tokens_details": {
+            "audio_tokens": 0,
+            "reasoning_tokens": 0,
+            "image_tokens": 0
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost": 0.000318,
+          "is_byok": false,
+          "cost_details": {
+            "upstream_inference_cost": 0.000318,
+            "upstream_inference_prompt_cost": 0.0003116,
+            "upstream_inference_completions_cost": 6.4e-06
+          }
+        },
+        "provider": "OpenAI",
+        "service_tier": "default"
+      },
+      "generation_time_seconds": null,
+      "audio_format": null,
+      "audio_path": null,
+      "audio_script_gold": null,
+      "speech_effects": null,
+      "source_effects": null,
+      "channel_effects": null,
+      "turn_taking_action": null,
+      "utterance_ids": null,
+      "chunk_id": null,
+      "is_final_chunk": true,
+      "source": null,
+      "contains_speech": true
+    }
+  ],
+  "events": [
+    {
+      "tool": "find_user_id_by_name_zip",
+      "arguments": {
+        "first_name": "Fatima",
+        "last_name": "Johnson",
+        "zip": "78712"
+      },
+      "response": "fatima_johnson_7581",
+      "error": false,
+      "mutating": false,
+      "pre_state": null,
+      "elapsed_seconds": 0.0015236656181514263
+    },
+    {
+      "tool": "get_order_details",
+      "arguments": {
+        "order_id": "#W8665881"
+      },
+      "response": "{\"order_id\": \"#W8665881\", \"user_id\": \"fatima_johnson_7581\", \"address\": {\"address1\": \"123 Elm Street\", \"address2\": \"Suite 640\", \"city\": \"Austin\", \"country\": \"USA\", \"state\": \"TX\", \"zip\": \"78712\"}, \"items\": [{\"name\": \"Bluetooth Speaker\", \"product_id\": \"4768869376\", \"item_id\": \"5855700373\", \"price\": 293.46, \"options\": {\"color\": \"black\", \"battery life\": \"10 hours\", \"water resistance\": \"yes\"}}, {\"name\": \"Smart Watch\", \"product_id\": \"6945232052\", \"item_id\": \"9408160950\", \"price\": 381.26, \"options\": {\"color\": \"gold\", \"band material\": \"leather\", \"display\": \"LCD\"}}, {\"name\": \"Dumbbell Set\", \"product_id\": \"7233192239\", \"item_id\": \"4422467033\", \"price\": 483.47, \"options\": {\"weight range\": \"30-50 lbs\", \"material\": \"urethane\", \"set type\": \"adjustable\"}}, {\"name\": \"Espresso Machine\", \"product_id\": \"4354588079\", \"item_id\": \"1157853815\", \"price\": 3096.7, \"options\": {\"pressure\": \"19 bar\", \"capacity\": \"2L\", \"type\": \"capsule\"}}, {\"name\": \"Action Camera\", \"product_id\": \"3377618313\", \"item_id\": \"8725040869\", \"price\": 522.86, \"options\": {\"resolution\": \"4K\", \"waterproof\": \"no\", \"color\": \"black\"}}], \"status\": \"pending\", \"fulfillments\": [], \"payment_history\": [{\"transaction_type\": \"payment\", \"amount\": 4777.75, \"payment_method_id\": \"paypal_5364164\"}], \"cancel_reason\": null, \"exchange_items\": null, \"exchange_new_items\": null, \"exchange_payment_method_id\": null, \"exchange_price_difference\": null, \"return_items\": null, \"return_payment_method_id\": null}",
+      "error": false,
+      "mutating": false,
+      "pre_state": null,
+      "elapsed_seconds": 0.0005999160930514336
+    },
+    {
+      "tool": "modify_pending_order_address",
+      "arguments": {
+        "order_id": "#W8665881",
+        "address1": "123 Elm Street",
+        "address2": "Suite 641",
+        "city": "Austin",
+        "state": "TX",
+        "country": "USA",
+        "zip": "78712"
+      },
+      "response": "{\"order_id\": \"#W8665881\", \"user_id\": \"fatima_johnson_7581\", \"address\": {\"address1\": \"123 Elm Street\", \"address2\": \"Suite 641\", \"city\": \"Austin\", \"country\": \"USA\", \"state\": \"TX\", \"zip\": \"78712\"}, \"items\": [{\"name\": \"Bluetooth Speaker\", \"product_id\": \"4768869376\", \"item_id\": \"5855700373\", \"price\": 293.46, \"options\": {\"color\": \"black\", \"battery life\": \"10 hours\", \"water resistance\": \"yes\"}}, {\"name\": \"Smart Watch\", \"product_id\": \"6945232052\", \"item_id\": \"9408160950\", \"price\": 381.26, \"options\": {\"color\": \"gold\", \"band material\": \"leather\", \"display\": \"LCD\"}}, {\"name\": \"Dumbbell Set\", \"product_id\": \"7233192239\", \"item_id\": \"4422467033\", \"price\": 483.47, \"options\": {\"weight range\": \"30-50 lbs\", \"material\": \"urethane\", \"set type\": \"adjustable\"}}, {\"name\": \"Espresso Machine\", \"product_id\": \"4354588079\", \"item_id\": \"1157853815\", \"price\": 3096.7, \"options\": {\"pressure\": \"19 bar\", \"capacity\": \"2L\", \"type\": \"capsule\"}}, {\"name\": \"Action Camera\", \"product_id\": \"3377618313\", \"item_id\": \"8725040869\", \"price\": 522.86, \"options\": {\"resolution\": \"4K\", \"waterproof\": \"no\", \"color\": \"black\"}}], \"status\": \"pending\", \"fulfillments\": [], \"payment_history\": [{\"transaction_type\": \"payment\", \"amount\": 4777.75, \"payment_method_id\": \"paypal_5364164\"}], \"cancel_reason\": null, \"exchange_items\": null, \"exchange_new_items\": null, \"exchange_payment_method_id\": null, \"exchange_price_difference\": null, \"return_items\": null, \"return_payment_method_id\": null}",
+      "error": false,
+      "mutating": true,
+      "pre_state": {
+        "order_id": "#W8665881",
+        "user_id": "fatima_johnson_7581",
+        "address": {
+          "address1": "123 Elm Street",
+          "address2": "Suite 640",
+          "city": "Austin",
+          "country": "USA",
+          "state": "TX",
+          "zip": "78712"
+        },
+        "items": [
+          {
+            "name": "Bluetooth Speaker",
+            "product_id": "4768869376",
+            "item_id": "5855700373",
+            "price": 293.46,
+            "options": {
+              "color": "black",
+              "battery life": "10 hours",
+              "water resistance": "yes"
+            }
+          },
+          {
+            "name": "Smart Watch",
+            "product_id": "6945232052",
+            "item_id": "9408160950",
+            "price": 381.26,
+            "options": {
+              "color": "gold",
+              "band material": "leather",
+              "display": "LCD"
+            }
+          },
+          {
+            "name": "Dumbbell Set",
+            "product_id": "7233192239",
+            "item_id": "4422467033",
+            "price": 483.47,
+            "options": {
+              "weight range": "30-50 lbs",
+              "material": "urethane",
+              "set type": "adjustable"
+            }
+          },
+          {
+            "name": "Espresso Machine",
+            "product_id": "4354588079",
+            "item_id": "1157853815",
+            "price": 3096.7,
+            "options": {
+              "pressure": "19 bar",
+              "capacity": "2L",
+              "type": "capsule"
+            }
+          },
+          {
+            "name": "Action Camera",
+            "product_id": "3377618313",
+            "item_id": "8725040869",
+            "price": 522.86,
+            "options": {
+              "resolution": "4K",
+              "waterproof": "no",
+              "color": "black"
+            }
+          }
+        ],
+        "status": "pending",
+        "fulfillments": [],
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 4777.75,
+            "payment_method_id": "paypal_5364164"
+          }
+        ],
+        "cancel_reason": null,
+        "exchange_items": null,
+        "exchange_new_items": null,
+        "exchange_payment_method_id": null,
+        "exchange_price_difference": null,
+        "return_items": null,
+        "return_payment_method_id": null
+      },
+      "elapsed_seconds": 0.0014549996703863144,
+      "risk": {
+        "impact": 0.7,
+        "downstream": 0.8,
+        "irreversibility": 0.25,
+        "uncertainty": 0.5,
+        "score": 0.595
+      },
+      "checkpoint": true,
+      "verification": {
+        "verdict": "INCONCLUSIVE",
+        "reason": "No unambiguous target street independently stated by user",
+        "evidence": {
+          "order_id": "#W8665881",
+          "user_id": "fatima_johnson_7581",
+          "address": {
+            "address1": "123 Elm Street",
+            "address2": "Suite 641",
+            "city": "Austin",
+            "country": "USA",
+            "state": "TX",
+            "zip": "78712"
+          },
+          "items": [
+            {
+              "name": "Bluetooth Speaker",
+              "product_id": "4768869376",
+              "item_id": "5855700373",
+              "price": 293.46,
+              "options": {
+                "color": "black",
+                "battery life": "10 hours",
+                "water resistance": "yes"
+              }
+            },
+            {
+              "name": "Smart Watch",
+              "product_id": "6945232052",
+              "item_id": "9408160950",
+              "price": 381.26,
+              "options": {
+                "color": "gold",
+                "band material": "leather",
+                "display": "LCD"
+              }
+            },
+            {
+              "name": "Dumbbell Set",
+              "product_id": "7233192239",
+              "item_id": "4422467033",
+              "price": 483.47,
+              "options": {
+                "weight range": "30-50 lbs",
+                "material": "urethane",
+                "set type": "adjustable"
+              }
+            },
+            {
+              "name": "Espresso Machine",
+              "product_id": "4354588079",
+              "item_id": "1157853815",
+              "price": 3096.7,
+              "options": {
+                "pressure": "19 bar",
+                "capacity": "2L",
+                "type": "capsule"
+              }
+            },
+            {
+              "name": "Action Camera",
+              "product_id": "3377618313",
+              "item_id": "8725040869",
+              "price": 522.86,
+              "options": {
+                "resolution": "4K",
+                "waterproof": "no",
+                "color": "black"
+              }
+            }
+          ],
+          "status": "pending",
+          "fulfillments": [],
+          "payment_history": [
+            {
+              "transaction_type": "payment",
+              "amount": 4777.75,
+              "payment_method_id": "paypal_5364164"
+            }
+          ],
+          "cancel_reason": null,
+          "exchange_items": null,
+          "exchange_new_items": null,
+          "exchange_payment_method_id": null,
+          "exchange_price_difference": null,
+          "return_items": null,
+          "return_payment_method_id": null
+        },
+        "read_calls": 2
+      }
+    }
+  ],
+  "suite": "heldout"
+}

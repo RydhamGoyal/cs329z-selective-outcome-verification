@@ -1,0 +1,23 @@
+{
+  "suite": "heldout",
+  "benchmark_commit": "033bf082f48e4a3c6a1256208e93cf2ce9c3bb6f",
+  "model": "openrouter/openai/gpt-4.1-mini",
+  "seed": 42,
+  "threshold": 0.55,
+  "random_rate_from_development": 0.7142857142857143,
+  "development_dir": "outputs/benchmark_final_dev",
+  "tasks": [
+    "17",
+    "42",
+    "71",
+    "97",
+    "102"
+  ],
+  "policies": [
+    "risk",
+    "none",
+    "final-only",
+    "exhaustive",
+    "random"
+  ]
+}

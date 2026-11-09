@@ -1,0 +1,29 @@
+.env*
+!.env.example
+.venv/
+__pycache__/
+.pytest_cache/
+.vercel/
+.DS_Store
+*.pyc
+outputs/benchmark/
+outputs/benchmark_verified/
+outputs/retail_34_*.json
+outputs/offline_*.json
+outputs/offline_comparison.csv
+outputs/controlled_task41_risk_fault.json
+outputs/controlled_task41_risk_barrier.json
+CS 329Z Final Project Proposal - Rydham Goyal.pdf
+CS329Z Midway Report Instructions.pdf
+CS329Z Final Project Midway Report - Rydham Goyal.pdf
+/DEMO_GUIDE.md
+/MIDWAY_HANDOFF.md
+/MIDWAY_REPORT.md
+/RESEARCH_NOTES.md
+/report/MIDWAY_REPORT.tex
+/report/MIDWAY_REPORT.pdf
+report/*.aux
+report/*.fdb_latexmk
+report/*.fls
+report/*.log
+report/*.out
